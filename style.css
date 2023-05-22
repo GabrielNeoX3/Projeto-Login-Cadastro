@@ -1,0 +1,103 @@
+/* Aplicando reset no css padrão */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  --branco: #ffffff;
+  --azul: #0056fb;
+  --preto: #000000;
+}
+
+
+main{
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.esquerdo {
+  background-color: var(--branco);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+}
+
+.textos {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--preto);
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 0;
+}
+
+button{
+  width: 100%;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--azul);
+  color: var(--branco);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 8px 0;
+}
+
+.esquerdo p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.direito {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--azul);
+  width: 50%;
+}
+
+.direito div h1{
+  text-align: justify;
+}
+
+.direito div p{
+  text-align: justify;
+}
+
+img{
+  width: 100%;
+}
+
+
+@media (max-width:580px) {
+  main {
+    display: block;
+  }
+
+  .esquerdo{
+    width: 100%;
+  }
+
+  .direito{
+    width: 100%;
+  }
+}
